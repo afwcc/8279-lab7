@@ -1,4 +1,4 @@
-import lab7
+import lab7library
 
 ball =  [
 [0,0,0,1,1,0,0,0],
@@ -11,4 +11,4 @@ ball =  [
 [0,0,0,1,1,0,0,0]
 ]
 
-lab7.moveObject(ball,3,3,3,3)
+lab7library.moveObject(ball,3,3,3,3)
