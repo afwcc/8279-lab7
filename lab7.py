@@ -32,10 +32,30 @@ def displayObject(obj,x,y):
         i=i+1
     lcd.show()
 
-def moveObject(obj,x,y,vx,vy):
-
+def s:
+    while True:
+        x = x + vx
+        y = y + vy
+        i = 0
+        for line in obj:
+            j = 0
+            for pixel in line:
+                lcd.set_pixel(x + j, y + i, pixel)
+                j = j + 1
+            i = i + 1
+        lcd.show()
+        eraseObject(obj, x - vx, y - vy)
+        displayObject(obj, x, y)
 
 def eraseObject(obj,x,y):
+    i = 0
+    for line in obj:
+        j = 0
+        for pixel in line:
+            lcd.set_pixel(x + j, y + i, 0)
+            j = j + 1
+        i = i + 1
+    lcd.show()
 
 
 def clearScreen(lcd):

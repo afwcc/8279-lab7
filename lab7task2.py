@@ -1,3 +1,7 @@
+import lab7
+
+lab7.moveObject(obj,x,y,vx,vy)
+
 ball =  [
 [0,0,0,1,1,0,0,0],
 [0,0,1,1,1,1,0,0],
