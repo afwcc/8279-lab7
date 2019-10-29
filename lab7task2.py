@@ -1,7 +1,5 @@
 import lab7
 
-lab7.moveObject(obj,x,y,vx,vy)
-
 ball =  [
 [0,0,0,1,1,0,0,0],
 [0,0,1,1,1,1,0,0],
@@ -12,3 +10,5 @@ ball =  [
 [0,0,1,1,1,1,0,0],
 [0,0,0,1,1,0,0,0]
 ]
+
+lab7.moveObject(ball,3,3,3,3)
